@@ -22,6 +22,16 @@ public class ImplementationTest {
 
     @Test
     public void simpleFailing() {
-        assertFalse(imp.isUnique("a"));
+        assertFalse(imp.isUnique("aa"));
+    }
+
+    @Test
+    public void overlyLongFailing() {
+        StringBuilder str_builder = new StringBuilder("a");
+        for (char i = 0; i <= 128; i++) {
+            char new_char = i;
+            str_builder.append(new_char);
+        }
+        assertFalse(imp.isUnique(str_builder.toString()));
     }
 }
