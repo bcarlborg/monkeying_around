@@ -55,20 +55,19 @@ class Implementation {
                 }
             }
         }
-
         return true;
     }
 
 
-    public static void main(String args[]) {
-        Implementation imp = new Implementation();
-
-        String input = "abcd";
-        System.out.println("Testing: " + input);
-        System.out.println(imp.isUnique(input));
-
-        input = "aaaa";
-        System.out.println("Testing: " + input);
-        System.out.println(imp.isUnique(input));
-    }
+    // public static void main(String args[]) {
+    //     Implementation imp = new Implementation();
+    //
+    //     String input = "abcd";
+    //     System.out.println("Testing: " + input);
+    //     System.out.println(imp.isUnique(input));
+    //
+    //     input = "aaaa";
+    //     System.out.println("Testing: " + input);
+    //     System.out.println(imp.isUnique(input));
+    // }
 }
